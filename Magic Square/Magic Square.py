@@ -48,7 +48,7 @@ def magic_square(n):
          print(magicSquare[i][j], end=" ")   
       print()
    
-    print("THe sum of each row/column/diagonal is: ",(n*(n**2+1))/2) 
+    print("The sum of each row/column/diagonal is: ",(n*(n**2+1))/2) 
      
                  
 magic_square(3)
