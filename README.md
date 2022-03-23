@@ -1,2 +1,3 @@
-# JOC
-Joy of Computing
+# Cobra scritps
+
+Python Automation Scritps
