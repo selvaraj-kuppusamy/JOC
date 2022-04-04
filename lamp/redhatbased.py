@@ -3,26 +3,26 @@
 import os
 
 def install():
-           os.system('sudo apt install apache2 -y')
-           os.system('sudo apt install mysql-server -y')
-           os.system('sudo apt install php libapache2-mod-php php-mysql -y')
+           os.system('sudo yum install httpd -y')
+           os.system('sudo yum install mysql-server -y')
+           os.system('sudo yum install php libapache2-mod-php php-mysql -y')
     
 def start():
-	os.system('sudo systemctl start apache2')
-	os.system('sudo systemctl status apache2 --no-pager')
+	os.system('sudo systemctl start httpd')
+	os.system('sudo systemctl status httpd --no-pager')
 	os.system('sudo systemctl start mysql')
 	os.system('sudo systemctl status mysql --no-pager')
 
 def stop():
-	os.system('sudo systemctl stop apache2')
-	os.system('sudo systemctl status apache2 --no-pager')
+	os.system('sudo systemctl stop httpd')
+	os.system('sudo systemctl status httpd --no-pager')
 	os.system('sudo systemctl stop mysql')
 	os.system('sudo systemctl status mysql --no-pager')
 
 def uninstall():
-           os.system('sudo apt remove apache2 -y')
-           os.system('sudo apt remove mysql-server -y')
-           os.system('sudo apt remove php libapache2-mod-php php-mysql -y')
+           os.system('sudo yum remove httpd -y')
+           os.system('sudo yum remove mysql-server -y')
+           os.system('sudo yum remove php libapache2-mod-php php-mysql -y')
            
 print("1.Install lamp")
 print("2.Start lamp")
