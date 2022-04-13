@@ -23,7 +23,7 @@ def uninstall():
            os.system('sudo zypper remove apache2 -y')
            os.system('sudo zypper remove mysql-server -y')
            os.system('sudo zypper remove php libapache2-mod-php php-mysql -y')
-           
+print("Zypper Package")           
 print("1.Install lamp")
 print("2.Start lamp")
 print("3.Stop lamp")
