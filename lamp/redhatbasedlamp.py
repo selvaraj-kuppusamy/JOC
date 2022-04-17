@@ -23,7 +23,8 @@ def uninstall():
            os.system('sudo yum remove httpd -y')
            os.system('sudo yum remove mysql-server -y')
            os.system('sudo yum remove php libapache2-mod-php php-mysql -y')
-           
+
+print("yum Package") 
 print("1.Install lamp")
 print("2.Start lamp")
 print("3.Stop lamp")
