@@ -23,7 +23,7 @@ def uninstall():
            os.system('sudo apt remove apache2 -y')
            os.system('sudo apt remove mysql-server -y')
            os.system('sudo apt remove php libapache2-mod-php php-mysql -y')
-           
+print("apt package")           
 print("1.Install lamp")
 print("2.Start lamp")
 print("3.Stop lamp")
